@@ -1,0 +1,23 @@
+What is scope? Your explanation should include the idea of global vs. block scope.
+Variable scope is a relm of script that is visble. Throughout the range of JavaScript code there are two different kinds 
+of scope. One you have global, which are usually the variables with const and capable of reusing them again. While block i
+s used through out the function. Once, it is called through the function and is closed it goes back to the value outside of the function. As if it didn't 
+exist before. 
+
+Why are global variables avoided?
+The reason global variables are avoided because it can make your script full of debug as well as confusing. 
+Most of the times we try not to use global variables because cause they can cause debugs throughout your script. For 
+example, If you were to write a global variable in once file, and connect another file that already has that variable. 
+It could get overridden by the new code that you wrote and leaves the others unpure. It can become a problem when working 
+with teams when your using global variables. The last thing you want is a small missed communication about a variable and every one is 
+using a global. One will get overridden while the other will act as if it doesn't exist or even output 'Error'.
+
+Explain JavaScript's strict mode
+If you ever see 'use strict' in a script that means the file is in strict mode. It only allows you to declare let and const
+variables throughout the script. If you try to use a global it will comeback with an error. You can set them for the whole 
+file or for a function. 
+
+What are side effects, and what is a pure function?
+A pure function inputs always return the same outputs and that doesn't have side effects. When you call your pure function to
+return something differnt then the orginal output that means you have created a side effect and as well as a impure function which 
+can or will cause bugs later through out your script. 
